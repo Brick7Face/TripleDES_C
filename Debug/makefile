@@ -22,19 +22,19 @@ endif
 # Add inputs and outputs from these tool invocations to the build variables 
 
 # All Target
-all: TDES.exe
+all: TripleDES_C.exe
 
 # Tool invocations
-TDES.exe: $(OBJS) $(USER_OBJS)
+TripleDES_C.exe: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: Cygwin C Linker'
-	gcc  -o "TDES.exe" $(OBJS) $(USER_OBJS) $(LIBS)
+	gcc  -o "TripleDES_C.exe" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) $(EXECUTABLES)$(OBJS)$(C_DEPS) TDES.exe
+	-$(RM) $(EXECUTABLES)$(OBJS)$(C_DEPS) TripleDES_C.exe
 	-@echo ' '
 
 .PHONY: all clean dependents
