@@ -1,0 +1,1 @@
+TDESTest.o: ../TDESTest.c
