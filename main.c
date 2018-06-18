@@ -45,14 +45,16 @@ void test_one_one(void) {
 			{0xab, 0x00, 0x01, 0x01, 0x01, 0x7e, 0x3f, 0x1a}
 	};
 	tdes_init(key_ring);
-	printf("Encrypting 18 bytes of binary data to generate 24 bytes of binary data\n\n");
+	printf("\nEncrypting 18 bytes of binary data to generate 24 bytes of binary data\n");
 	tdes_encrypt(18, plain_text, encrypted_text);
+	printf("\nDecrypting 24 bytes of binary data\n");
+	tdes_decrypt(24, encrypted_text, plain_text);
 	tdes_init(key_ring2);
-	printf("Decrypting 24 bytes of binary data\n\n");
+	printf("\nSecond plaintext\n");
 	tdes_decrypt(24, encrypted_text, plain_text);
 }
 
-//test a key similar to the real key with front ASCII value decreased by 1, should not be same -- FLAG
+//test a key similar to the real key with front ASCII value changed, should not be same -- FLAG
 void test_one_two(void) {
 	printf("\n------Testing MR 1.2------\n\n");
 	unsigned char plain_text[32]={0x80, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
@@ -65,15 +67,17 @@ void test_one_two(void) {
 			{0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01}
 	};
 	unsigned char key_ring2[3][8]={
-			{0x00, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01},
+			{0x10, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01},
 			{0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01},
 			{0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01}
 	};
 	tdes_init(key_ring);
-	printf("Encrypting 18 bytes of binary data to generate 24 bytes of binary data\n\n");
+	printf("\nEncrypting 18 bytes of binary data to generate 24 bytes of binary data\n");
 	tdes_encrypt(18, plain_text, encrypted_text);
+	printf("\nDecrypting 24 bytes of binary data\n");
+	tdes_decrypt(24, encrypted_text, plain_text);
 	tdes_init(key_ring2);
-	printf("Decrypting 24 bytes of binary data\n\n");
+	printf("\nSecond plaintext\n");
 	tdes_decrypt(24, encrypted_text, plain_text);
 }
 
@@ -95,14 +99,16 @@ void test_one_three(void) {
 			{0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01}
 	};
 	tdes_init(key_ring);
-	printf("Encrypting 18 bytes of binary data to generate 24 bytes of binary data\n\n");
+	printf("\nEncrypting 18 bytes of binary data to generate 24 bytes of binary data\n");
 	tdes_encrypt(18, plain_text, encrypted_text);
+	printf("\nDecrypting 24 bytes of binary data\n");
+	tdes_decrypt(24, encrypted_text, plain_text);
 	tdes_init(key_ring2);
-	printf("Decrypting 24 bytes of binary data\n\n");
+	printf("\nSecond plaintext\n");
 	tdes_decrypt(24, encrypted_text, plain_text);
 }
 
-//test a key similar to the real key with back ASCII value decreased by 1, should not be same -- FLAG
+//test a key similar to the real key with back ASCII value changed, should not be same -- FLAG
 void test_one_four(void) {
 	printf("\n------Testing MR 1.4------\n\n");
 	unsigned char plain_text[32]={0x80, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
@@ -117,13 +123,15 @@ void test_one_four(void) {
 	unsigned char key_ring2[3][8]={
 			{0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01},
 			{0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01},
-			{0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x00}
+			{0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x10}
 	};
 	tdes_init(key_ring);
-	printf("Encrypting 18 bytes of binary data to generate 24 bytes of binary data\n\n");
+	printf("\nEncrypting 18 bytes of binary data to generate 24 bytes of binary data\n");
 	tdes_encrypt(18, plain_text, encrypted_text);
+	printf("\nDecrypting 24 bytes of binary data\n");
+	tdes_decrypt(24, encrypted_text, plain_text);
 	tdes_init(key_ring2);
-	printf("Decrypting 24 bytes of binary data\n\n");
+	printf("\nSecond plaintext\n");
 	tdes_decrypt(24, encrypted_text, plain_text);
 }
 
@@ -145,10 +153,12 @@ void test_one_five(void) {
 			{0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x02}
 	};
 	tdes_init(key_ring);
-	printf("Encrypting 18 bytes of binary data to generate 24 bytes of binary data\n\n");
+	printf("\nEncrypting 18 bytes of binary data to generate 24 bytes of binary data\n");
 	tdes_encrypt(18, plain_text, encrypted_text);
+	printf("\nDecrypting 24 bytes of binary data\n");
+	tdes_decrypt(24, encrypted_text, plain_text);
 	tdes_init(key_ring2);
-	printf("Decrypting 24 bytes of binary data\n\n");
+	printf("\nSecond plaintext\n");
 	tdes_decrypt(24, encrypted_text, plain_text);
 }
 
@@ -170,10 +180,12 @@ void test_one_six(void) {
 			{0xBB, 0xCB, 0xCA, 0xAE, 0xEE, 0x01, 0xDD, 0x01}
 	};
 	tdes_init(key_ring);
-	printf("Encrypting 18 bytes of binary data to generate 24 bytes of binary data\n\n");
+	printf("\nEncrypting 18 bytes of binary data to generate 24 bytes of binary data\n");
 	tdes_encrypt(18, plain_text, encrypted_text);
+	printf("\nDecrypting 24 bytes of binary data\n");
+	tdes_decrypt(24, encrypted_text, plain_text);
 	tdes_init(key_ring2);
-	printf("Decrypting 24 bytes of binary data\n\n");
+	printf("\nSecond plaintext\n");
 	tdes_decrypt(24, encrypted_text, plain_text);
 }
 
@@ -190,15 +202,17 @@ void test_one_seven(void) {
 			{0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01}
 	};
 	unsigned char key_ring2[3][8]={
-			{0x00, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01},
+			{0x10, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01},
 			{0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01},
 			{0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01}
 	};
 	tdes_init(key_ring);
-	printf("Encrypting 18 bytes of binary data to generate 24 bytes of binary data\n\n");
+	printf("\nEncrypting 18 bytes of binary data to generate 24 bytes of binary data\n");
 	tdes_encrypt(18, plain_text, encrypted_text);
+	printf("\nDecrypting 24 bytes of binary data\n");
+	tdes_decrypt(24, encrypted_text, plain_text);
 	tdes_init(key_ring2);
-	printf("Decrypting 24 bytes of binary data\n\n");
+	printf("\nSecond plaintext\n");
 	tdes_decrypt(24, encrypted_text, plain_text);
 }
 
@@ -220,10 +234,12 @@ void test_one_eight(void) {
 			{0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01}
 	};
 	tdes_init(key_ring);
-	printf("Encrypting 18 bytes of binary data to generate 24 bytes of binary data\n\n");
+	printf("\nEncrypting 18 bytes of binary data to generate 24 bytes of binary data\n");
 	tdes_encrypt(18, plain_text, encrypted_text);
+	printf("\nDecrypting 24 bytes of binary data\n");
+	tdes_decrypt(24, encrypted_text, plain_text);
 	tdes_init(key_ring2);
-	printf("Decrypting 24 bytes of binary data\n\n");
+	printf("\nSecond plaintext\n");
 	tdes_decrypt(24, encrypted_text, plain_text);
 }
 
@@ -242,13 +258,15 @@ void test_one_nine(void) {
 	unsigned char key_ring2[3][8]={
 			{0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01},
 			{0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01},
-			{0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x00}
+			{0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x10}
 	};
 	tdes_init(key_ring);
-	printf("Encrypting 18 bytes of binary data to generate 24 bytes of binary data\n\n");
+	printf("\nEncrypting 18 bytes of binary data to generate 24 bytes of binary data\n");
 	tdes_encrypt(18, plain_text, encrypted_text);
+	printf("\nDecrypting 24 bytes of binary data\n");
+	tdes_decrypt(24, encrypted_text, plain_text);
 	tdes_init(key_ring2);
-	printf("Decrypting 24 bytes of binary data\n\n");
+	printf("\nSecond plaintext\n");
 	tdes_decrypt(24, encrypted_text, plain_text);
 }
 
@@ -270,10 +288,12 @@ void test_one_ten(void) {
 			{0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x02}
 	};
 	tdes_init(key_ring);
-	printf("Encrypting 18 bytes of binary data to generate 24 bytes of binary data\n\n");
+	printf("\nEncrypting 18 bytes of binary data to generate 24 bytes of binary data\n");
 	tdes_encrypt(18, plain_text, encrypted_text);
+	printf("\nDecrypting 24 bytes of binary data\n");
+	tdes_decrypt(24, encrypted_text, plain_text);
 	tdes_init(key_ring2);
-	printf("Decrypting 24 bytes of binary data\n\n");
+	printf("\nSecond plaintext\n");
 	tdes_decrypt(24, encrypted_text, plain_text);
 }
 
@@ -295,7 +315,7 @@ void test_two_one(void) {
 			{0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01}
 	};
 	tdes_init(key_ring);
-	printf("Encrypting 18 bytes of binary data to generate 24 bytes of binary data\n\n");
+	printf("Encrypting 18 bytes of binary data to generate 24 bytes of binary data\n");
 	tdes_encrypt(18, plain_text, encrypted_text);
 	tdes_encrypt(18, plain_text2, encrypted_text);
 }
@@ -316,7 +336,7 @@ void test_two_two(void) {
 			{0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01}
 	};
 	tdes_init(key_ring);
-	printf("Encrypting 18 bytes of binary data to generate 24 bytes of binary data\n\n");
+	printf("Encrypting 18 bytes of binary data to generate 24 bytes of binary data\n");
 	tdes_encrypt(18, plain_text, encrypted_text);
 	tdes_encrypt(18, plain_text2, encrypted_text);
 }
@@ -341,13 +361,13 @@ void test_three_one(void) {
 			{0xBB, 0xCB, 0xCA, 0xAE, 0xEE, 0x01, 0xDD, 0x01}
 	};
 	tdes_init(key_ring);
-	printf("Encrypting 18 bytes of binary data to generate 24 bytes of binary data\n\n");
+	printf("Encrypting 18 bytes of binary data to generate 24 bytes of binary data\n");
 	tdes_encrypt(18, plain_text, encrypted_text);
 	tdes_init(key_ring2);
 	tdes_encrypt(18, plain_text, encrypted_text);
 }
 
-//test a key similar to the real key with front ASCII value decreased by 1, should not be same - FLAG
+//test a key similar to the real key with front ASCII value different, should not be same
 void test_three_two(void) {
 	printf("\n------Testing MR 3.2------\n\n");
 	unsigned char plain_text[32]={0x80, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
@@ -360,12 +380,12 @@ void test_three_two(void) {
 			{0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01}
 	};
 	unsigned char key_ring2[3][8]={
-			{0x00, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01},
+			{0x10, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01},
 			{0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01},
 			{0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01}
 	};
 	tdes_init(key_ring);
-	printf("Encrypting 18 bytes of binary data to generate 24 bytes of binary data\n\n");
+	printf("Encrypting 18 bytes of binary data to generate 24 bytes of binary data\n");
 	tdes_encrypt(18, plain_text, encrypted_text);
 	tdes_init(key_ring2);
 	tdes_encrypt(18, plain_text, encrypted_text);
@@ -389,13 +409,13 @@ void test_three_three(void) {
 			{0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01}
 	};
 	tdes_init(key_ring);
-	printf("Encrypting 18 bytes of binary data to generate 24 bytes of binary data\n\n");
+	printf("Encrypting 18 bytes of binary data to generate 24 bytes of binary data\n");
 	tdes_encrypt(18, plain_text, encrypted_text);
 	tdes_init(key_ring2);
 	tdes_encrypt(18, plain_text, encrypted_text);
 }
 
-//test a key similar to the real key with back ASCII value decreased by 1, should not be same - FLAG
+//test a key similar to the real key with back ASCII value different, should not be same
 void test_three_four(void) {
 	printf("\n------Testing MR 3.4------\n\n");
 	unsigned char plain_text[32]={0x80, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
@@ -410,10 +430,10 @@ void test_three_four(void) {
 	unsigned char key_ring2[3][8]={
 			{0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01},
 			{0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01},
-			{0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x00}
+			{0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x10}
 	};
 	tdes_init(key_ring);
-	printf("Encrypting 18 bytes of binary data to generate 24 bytes of binary data\n\n");
+	printf("Encrypting 18 bytes of binary data to generate 24 bytes of binary data\n");
 	tdes_encrypt(18, plain_text, encrypted_text);
 	tdes_init(key_ring2);
 	tdes_encrypt(18, plain_text, encrypted_text);
@@ -437,7 +457,7 @@ void test_three_five(void) {
 			{0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x02}
 	};
 	tdes_init(key_ring);
-	printf("Encrypting 18 bytes of binary data to generate 24 bytes of binary data\n\n");
+	printf("Encrypting 18 bytes of binary data to generate 24 bytes of binary data\n");
 	tdes_encrypt(18, plain_text, encrypted_text);
 	tdes_init(key_ring2);
 	tdes_encrypt(18, plain_text, encrypted_text);
@@ -511,5 +531,11 @@ int main(void) {
 	test_three_four();
 	test_three_five();
 	test_three_six();
+
+	/* test_three_seven();
+	test_three_eight();
+	test_three_nine();
+	test_three_ten(); */
+
 	return 0;
 }
