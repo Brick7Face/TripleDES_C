@@ -1,0 +1,125 @@
+Encrypting 18 bytes of binary data to generate 24 bytes of binary data
+Decrypting 24 bytes of binary data
+
+------Testing MR 1.1------
+
+
+Encrypting 18 bytes of binary data to generate 24 bytes of binary data
+
+Decrypting 24 bytes of binary data
+
+Second plaintext
+
+------Testing MR 1.2------
+
+
+Encrypting 18 bytes of binary data to generate 24 bytes of binary data
+
+Decrypting 24 bytes of binary data
+
+Second plaintext
+
+------Testing MR 1.3------
+
+
+Encrypting 18 bytes of binary data to generate 24 bytes of binary data
+
+Decrypting 24 bytes of binary data
+
+Second plaintext
+
+------Testing MR 1.4------
+
+
+Encrypting 18 bytes of binary data to generate 24 bytes of binary data
+
+Decrypting 24 bytes of binary data
+
+Second plaintext
+
+------Testing MR 1.5------
+
+
+Encrypting 18 bytes of binary data to generate 24 bytes of binary data
+
+Decrypting 24 bytes of binary data
+
+Second plaintext
+
+------Testing MR 1.6------
+
+
+Encrypting 18 bytes of binary data to generate 24 bytes of binary data
+
+Decrypting 24 bytes of binary data
+
+Second plaintext
+
+------Testing MR 1.7------
+
+
+Encrypting 18 bytes of binary data to generate 24 bytes of binary data
+
+Decrypting 24 bytes of binary data
+
+Second plaintext
+
+------Testing MR 1.8------
+
+
+Encrypting 18 bytes of binary data to generate 24 bytes of binary data
+
+Decrypting 24 bytes of binary data
+
+Second plaintext
+
+------Testing MR 1.9------
+
+
+Encrypting 18 bytes of binary data to generate 24 bytes of binary data
+
+Decrypting 24 bytes of binary data
+
+Second plaintext
+
+------Testing MR 1.10------
+
+
+Encrypting 18 bytes of binary data to generate 24 bytes of binary data
+
+Decrypting 24 bytes of binary data
+
+Second plaintext
+
+------Testing MR 2.1------
+
+Encrypting 18 bytes of binary data to generate 24 bytes of binary data
+
+------Testing MR 2.2------
+
+Encrypting 18 bytes of binary data to generate 24 bytes of binary data
+
+------Testing MR 3.1------
+
+Encrypting 18 bytes of binary data to generate 24 bytes of binary data
+
+------Testing MR 3.2------
+
+Encrypting 18 bytes of binary data to generate 24 bytes of binary data
+
+------Testing MR 3.3------
+
+Encrypting 18 bytes of binary data to generate 24 bytes of binary data
+
+------Testing MR 3.4------
+
+Encrypting 18 bytes of binary data to generate 24 bytes of binary data
+
+------Testing MR 3.5------
+
+Encrypting 18 bytes of binary data to generate 24 bytes of binary data
+
+------Testing MR 3.6------
+
+Encrypting 18 bytes of binary data to generate 24 bytes of binary data
+

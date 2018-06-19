@@ -219,13 +219,14 @@ void tdes_encrypt(unsigned long n, unsigned char *in, unsigned char *out) {
 			*(in+cnt)=0x00;
 		}
 	}
+	printf("\nTDES Ciphertext\n");
 	for (i=0; i<cnt; i+=8) {
 		for (j=0; j<8; j++) {
 			for (k=0; k<8; k++) {
 				pt[j*8+k]=((*(in+i+j))&(0x01<<(7-k)))>>(7-k);
 			}
 		}
-		printf("\nTDES Ciphertext Block %d:\n", i/8);
+		//printf("\nTDES Ciphertext Block %d:\n", i/8);
 		des_encrypt(1);
 		des_decrypt(2);
 		des_encrypt(3);
@@ -241,7 +242,7 @@ void tdes_encrypt(unsigned long n, unsigned char *in, unsigned char *out) {
 			}
 		}
 		for (j=i; j<i+8; j++) {
-			printf("%2x ", *(out+j));
+			printf("%2x", *(out+j));
 		}
 		getchar();
 	}
@@ -253,13 +254,14 @@ void tdes_decrypt(unsigned long n, unsigned char *in, unsigned char *out) {
 	if ((n%8)!=0) {
 		cnt=8*(n/8)+8;
 	}
+	printf("\nTDES Plaintext\n");
 	for (i=0; i<cnt; i+=8) {
 		for (j=0; j<8; j++) {
 			for (k=0; k<8; k++) {
 				et[j*8+k]=((*(in+i+j))&(0x01<<(7-k)))>>(7-k);
 			}
 		}
-		printf("\nTDES Plaintext Block %d:\n", i/8);
+		//printf("\nTDES Plaintext Block %d:\n", i/8);
 		des_decrypt(3);
 		des_encrypt(2);
 		des_decrypt(1);
@@ -275,7 +277,7 @@ void tdes_decrypt(unsigned long n, unsigned char *in, unsigned char *out) {
 			}
 		}
 		for (j=i; j<i+8; j++) {
-			printf("%2x ", *(out+j));
+			printf("%2x", *(out+j));
 		}
 		getchar();
 	}

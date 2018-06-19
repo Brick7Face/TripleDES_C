@@ -4,19 +4,16 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../TDESTest.c \
 ../main.c \
 ../tdes.c \
 ../test.c 
 
 OBJS += \
-./TDESTest.o \
 ./main.o \
 ./tdes.o \
 ./test.o 
 
 C_DEPS += \
-./TDESTest.d \
 ./main.d \
 ./tdes.d \
 ./test.d 
