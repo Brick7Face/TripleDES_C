@@ -182,8 +182,8 @@ void print(unsigned char arr[]);
 void tdes_init(unsigned char key_ring[3][8]);
 void des_encrypt(int stage);
 void des_decrypt(int stage);
-void tdes_encrypt(unsigned long n, unsigned char *in, unsigned char *out);
-void tdes_decrypt(unsigned long n, unsigned char *in, unsigned char *out);
+void tdes_encrypt(FILE* f, unsigned long n, unsigned char *in, unsigned char *out);
+void tdes_decrypt(FILE* f, unsigned long n, unsigned char *in, unsigned char *out);
 ////////////////////////////////////////////////////////////////////////////////
 #else
 ////////////////////////////////////////////////////////////////////////////////
@@ -224,8 +224,8 @@ extern void print(unsigned char arr[]);
 extern void tdes_init(unsigned char key_ring[3][8]);
 extern void des_encrypt(int stage);
 extern void des_decrypt(int stage);
-extern void tdes_encrypt(unsigned long n, unsigned char *in, unsigned char *out);
-extern void tdes_decrypt(unsigned long n, unsigned char *in, unsigned char *out);
+extern void tdes_encrypt(FILE* f, unsigned long n, unsigned char *in, unsigned char *out);
+extern void tdes_decrypt(FILE* f, unsigned long n, unsigned char *in, unsigned char *out);
 ////////////////////////////////////////////////////////////////////////////////
 #endif
 ////////////////////////////////////////////////////////////////////////////////

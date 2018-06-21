@@ -19,6 +19,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 #include <stdio.h>
+#include <stdlib.h>
 
 #include "main.h"
 
@@ -211,7 +212,7 @@ void des_decrypt(int stage) {
 		pt[i]=pre_output[ip_inv[i]-1];
 	}
 }
-void tdes_encrypt(unsigned long n, unsigned char *in, unsigned char *out) {
+void tdes_encrypt(FILE* f, unsigned long n, unsigned char *in, unsigned char *out) {
 	unsigned long i, j, k, cnt;
 	cnt=n;
 	if ((n%8)!=0) {
@@ -219,7 +220,7 @@ void tdes_encrypt(unsigned long n, unsigned char *in, unsigned char *out) {
 			*(in+cnt)=0x00;
 		}
 	}
-	printf("\nTDES Ciphertext\n");
+	fprintf(f, "\nTDES Ciphertext\n");
 	for (i=0; i<cnt; i+=8) {
 		for (j=0; j<8; j++) {
 			for (k=0; k<8; k++) {
@@ -242,19 +243,19 @@ void tdes_encrypt(unsigned long n, unsigned char *in, unsigned char *out) {
 			}
 		}
 		for (j=i; j<i+8; j++) {
-			printf("%2x", *(out+j));
+			fprintf(f, "%2x", *(out+j));
 		}
 		getchar();
 	}
-	printf("\n\n");
+	fprintf(f, "\n\n");
 }
-void tdes_decrypt(unsigned long n, unsigned char *in, unsigned char *out) {
+void tdes_decrypt(FILE* f, unsigned long n, unsigned char *in, unsigned char *out) {
 	unsigned long i, j, k, cnt;
 	cnt=n;
 	if ((n%8)!=0) {
 		cnt=8*(n/8)+8;
 	}
-	printf("\nTDES Plaintext\n");
+	fprintf(f, "\nTDES Plaintext\n");
 	for (i=0; i<cnt; i+=8) {
 		for (j=0; j<8; j++) {
 			for (k=0; k<8; k++) {
@@ -277,9 +278,9 @@ void tdes_decrypt(unsigned long n, unsigned char *in, unsigned char *out) {
 			}
 		}
 		for (j=i; j<i+8; j++) {
-			printf("%2x", *(out+j));
+			fprintf(f, "%2x", *(out+j));
 		}
 		getchar();
 	}
-	printf("\n\n");
+	fprintf(f, "\n\n");
 }
