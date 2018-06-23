@@ -80,27 +80,49 @@ for x in range(10):
 
 # MR 2 testing
 print('\nMR 2\n')
-for x in range(2):  # 2 for now; needs to be 10
+for x in range(4):  # 2.1 - 2.4
     result = two(f)
     if result:
         yes += 1
     else:
         fail += 1
-
-# MR 3 testing
-print('\nMR 3\n')
-for x in range(6):
-    result = two(f)
-    if result:
-        yes += 1
-    else:
-        fail += 1
-result = three(f)
+result = three(f)   # 2.5
 if result:
     yes += 1
 else:
     fail += 1
-for x in range(5):
+for x in range(2):  # 2.6 - 2.7
+    result = two(f)
+    if result:
+        yes += 1
+    else:
+        fail += 1
+for x in range(2):
+    result = three(f)   # 2.8 - 2.9
+    if result:
+        yes += 1
+    else:
+        fail += 1
+result = two(f)   # 2.10
+if result:
+    yes += 1
+else:
+    fail += 1
+
+# MR 3 testing
+print('\nMR 3\n')
+for x in range(6):  # 3.1 - 3.6
+    result = two(f)
+    if result:
+        yes += 1
+    else:
+        fail += 1
+result = three(f)   # 3.7
+if result:
+    yes += 1
+else:
+    fail += 1
+for x in range(5):  # 3.8 - 3.12
     result = two(f)
     if result:
         yes += 1

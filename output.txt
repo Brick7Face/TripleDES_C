@@ -181,6 +181,106 @@ TDES Ciphertext
 c2379ff686c3848a491e89 de9ace9324591d195df8d8162
 
 
+------Testing MR 2.3------
+
+
+TDES Plaintext
+54205dce8418edb89ba217307a9bb9bc4591d195df8d8162
+
+
+TDES Plaintext
+6e56ac49e9d63e4bd81495 5 0a0ee254591d195df8d8162
+
+
+------Testing MR 2.4------
+
+
+TDES Plaintext
+eccf5447d638ada916b3359a5f70e3cf3c4d7d644edb1af3
+
+
+TDES Plaintext
+9c7b173592c88bbad68a2f74829747 13c4d7d644edb1af3
+
+
+------Testing MR 2.5------
+
+
+TDES Ciphertext
+e173387bc2d1be4f2cd4e596e5dfd0e23369ff94 ae77ec7
+
+
+TDES Plaintext
+91 1 2 3 4 5 6 71f2e3d4c5b6a70 0aabb 0 0 0 0 0 0
+
+
+TDES Plaintext
+91 1 2 3 4 5 6 71f2e3d4c5b6a70 0d336909fd1511261
+
+
+------Testing MR 2.6------
+
+
+TDES Ciphertext
+5136a825ebd96849aefdc017aaa68420c1 01897 c58cfc2
+
+
+TDES Ciphertext
+a939ab29e5ab19a3aefdc017aaa68420c1 01897 c58cfc2
+
+
+------Testing MR 2.7------
+
+
+TDES Ciphertext
+5136a825ebd96849aefdc017aaa68420c1 01897 c58cfc2
+
+
+TDES Ciphertext
+51dd9fded59e5625aefdc017aaa68420c1 01897 c58cfc2
+
+
+------Testing MR 2.8------
+
+
+TDES Ciphertext
+95f8a5e5dd31d9 0491e89 de9ace9324591d195df8d8162
+
+
+TDES Plaintext
+80 0 0 0 0 0 0 0 0 1 2 3 4 5 6 71a1b 0 0 0 0 0 0
+
+
+TDES Plaintext
+14e06fd1fd542758 0 1 2 3 4 5 6 786d3de 4dafbcad3
+
+
+------Testing MR 2.9------
+
+
+TDES Ciphertext
+95f8a5e5dd31d9 0491e89 de9ace9324591d195df8d8162
+
+
+TDES Plaintext
+80 0 0 0 0 0 0 0 0 1 2 3 4 5 6 71a1b 0 0 0 0 0 0
+
+
+TDES Plaintext
+26ecd92ca3de445c 0 1 2 3 4 5 6 786d3de 4dafbcad3
+
+
+------Testing MR 2.10------
+
+
+TDES Plaintext
+26ecd92ca3de445c61eac1109cf5d6e886d3de 4dafbcad3
+
+
+TDES Plaintext
+26ecd92ca3de445c 0 1 2 3 4 5 6 786d3de 4dafbcad3
+
+
 ------Testing MR 3.1------
 
 
