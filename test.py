@@ -1,5 +1,11 @@
-# function to test similarity of strings
 def simTest(comp1, comp2):
+    if comp1 != comp2:
+        return False
+    else:
+        return True
+
+# function to test similarity of strings
+def simTest2(comp1, comp2):
     if len(comp1) != len(comp2):
         return False
     else:
@@ -26,10 +32,10 @@ def three(f):
     for i in range(2):
         f.readline()
     if simTest(compare1, compare2):
-        print(trimmed[1], '\t--FAIL--')
+        print(trimmed[1], '--FAIL--')
         return False
     else:
-        print(trimmed[1], '\t  PASS  ')
+        print(trimmed[1], '  PASS  ')
         return True
 
 # function to process MR's with 2 prints
@@ -46,10 +52,10 @@ def two(f):
     for i in range(2):
         f.readline()
     if simTest(compare1, compare2):
-        print(trimmed[1], '\t--FAIL--')
+        print(trimmed[1], '--FAIL--')
         return False
     else:
-        print(trimmed[1], '\t  PASS  ')
+        print(trimmed[1], '  PASS  ')
         return True
 
 # counter variables
@@ -128,4 +134,10 @@ for x in range(5):  # 3.8 - 3.12
         yes += 1
     else:
         fail += 1
+
+
+print('\n\n----------------------------\nResults\n')
+print('Passed: ',yes,'/32')
+print('Failed: ',fail,'/32')
+print((yes/32)*100,'%')
  
