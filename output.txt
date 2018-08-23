@@ -416,3 +416,83 @@ e173387bc2d1be4f2cd4e596e5dfd0e23369ff94 ae77ec7
 TDES Ciphertext
 2c41e49f567799169c9bb92dac6e6963f78590a9f53c c2a
 
+
+------Testing MR 4.1------
+
+
+TDES Ciphertext
+95f8a5e5dd31d9 0491e89 de9ace9324591d195df8d8162
+
+
+TDES Ciphertext
+95f8a5e5dd31d9 0491e89 de9ace9324591d195df8d8162
+
+
+------Testing MR 4.2------
+
+
+TDES Ciphertext
+95f8a5e5dd31d9 0491e89 de9ace9324591d195df8d8162
+
+
+TDES Ciphertext
+bb88a228f82f95d9 d9f279ba5d87260d9 31b 271bd5a a
+
+
+------Testing MR 4.3------
+
+
+TDES Ciphertext
+95f8a5e5dd31d9 0491e89 de9ace9324591d195df8d8162
+
+
+TDES Ciphertext
+bb88a228f82f95d9 d9f279ba5d87260d9 31b 271bd5a a
+
+
+TDES Ciphertext
+95f8a5e5dd31d9 0491e89 de9ace9324591d195df8d8162
+
+
+------Testing MR 4.4------
+
+
+TDES Ciphertext
+95f8a5e5dd31d9 0491e89 de9ace9324591d195df8d8162
+
+
+TDES Ciphertext
+95f8a5e5dd31d9 0491e89 de9ace9324591d195df8d8162
+
+
+TDES Ciphertext
+95f8a5e5dd31d9 0491e89 de9ace9324591d195df8d8162
+
+
+TDES Ciphertext
+95f8a5e5dd31d9 0491e89 de9ace9324591d195df8d8162
+
+
+TDES Ciphertext
+95f8a5e5dd31d9 0491e89 de9ace9324591d195df8d8162
+
+
+------Finshing Up------
+
+
+TDES Ciphertext
+95f8a5e5dd31d9 0491e89 de9ace932e5a84b 0736c5d52
+
+
+TDES Plaintext
+80 0 0 0 0 0 0 0 0 1 2 3 4 5 6 7
+
+  97  98  99 100 101 128   0   0
+   0   0   0   0   0   0   1   2
+   3   4   5   6   7  26   0   0
+   0   0   0   0   0   0   0   0
+   0   0   0   0   0 149 248 165
+ 229 221  49 217   0  73  30 137
+  13 233 172 233  50 229 168  75
+   0 115 108  93  82   0   0   0
+

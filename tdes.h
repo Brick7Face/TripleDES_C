@@ -220,7 +220,7 @@ extern unsigned char d[28]; // global variable
 extern unsigned char cd[56]; // global variable
 ////////////////////////////////////////////////////////////////////////////////
 extern void left_shift(int n, unsigned char *arr);
-extern void print(unsigned char arr[]);
+extern void print(FILE* f, unsigned char arr[]);
 extern void tdes_init(unsigned char key_ring[3][8]);
 extern void des_encrypt(int stage);
 extern void des_decrypt(int stage);

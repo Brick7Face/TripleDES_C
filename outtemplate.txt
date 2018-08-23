@@ -1,0 +1,10 @@
+Encrypting 18 bytes of binary data to generate 24 bytes of binary data
+
+TDES Ciphertext
+95f8a5e5dd31d9 0491e89 de9ace9324591d195df8d8162
+
+Decrypting 24 bytes of binary data
+
+TDES Plaintext
+80 0 0 0 0 0 0 0 0 1 2 3 4 5 6 71a1b 0 0 0 0 0 0
+

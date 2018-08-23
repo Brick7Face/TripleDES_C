@@ -36,15 +36,15 @@ void left_shift(int n, unsigned char *arr) {
 		*(arr+27)=temp;
 	}
 }
-void print(unsigned char arr[]) {
+void print(FILE* f, unsigned char arr[]) {
 	int i;
 	for (i=0; i<64; i++) {
-		printf("%4d", arr[i]);
+		fprintf(f, "%4d", arr[i]);
 		if ((i+1)%8==0) {
-			printf("\n");
+			fprintf(f, "\n");
 		}
 	}
-	printf("\n");
+	fprintf(f, "\n");
 }
 void tdes_init(unsigned char key_ring[3][8]) {
 	int stage;
