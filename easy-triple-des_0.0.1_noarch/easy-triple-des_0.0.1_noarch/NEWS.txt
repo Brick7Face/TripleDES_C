@@ -1,0 +1,7 @@
+Version 0.0.1
+* This is a simple ANSI-C implementation of Triple-DES (as described in NIST Special Publication 800-67.)
+* It illustrates the algorithm.
+* It is platform independent.
+* It can be compiled with gcc.
+* The basic DES algorithm has been tested with MOVS (as described in NIST Special Publication 800-17.)
+* The Triple-DES alogrithm has been tested with TMOVS (as described in NIST NIST Special Publication 800-20.)
